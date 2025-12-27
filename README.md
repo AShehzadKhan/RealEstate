@@ -16,12 +16,15 @@ About-us focused layout
 
 Tech Stack
 
-React.js
+<p align="left">
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg" alt="React" width="50" />
+  <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind CSS" width="50" />
+  
+</p> React, Tailwind CSS
 
-Tailwind CSS
 
 
-For Live Demo : [click here](https://ashehzadkhan.github.io/RealEstate)
+# For Live Demo : [click here](https://ashehzadkhan.github.io/RealEstate)
 
 Purpose
 
