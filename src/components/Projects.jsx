@@ -69,20 +69,29 @@ const Projects = () => {
 
       <div className="overflow-hidden">
         <div
-          className="flex gap-8 transition-transform duration-500 ease-in-out"
+          className="flex transition-transform duration-500 ease-in-out"
+          // FIXED: Remove gap from flex container
           style={{
-            transform: `translateX(-${(currentIndex * 100) / cardToShow + 8}%)`,
+            // FIXED: Calculate translation based on card width (100% / cardToShow)
+            transform: `translateX(-${(currentIndex * 100) / cardToShow}%)`,
           }}
         >
           {projectsData.map((project, index) => (
             <div
               key={index}
-              className={`relative flex-shrink-0 w-full sm:w-1/4`}
+              // FIXED: Use proper width and add margin instead of gap
+              className={`relative flex-shrink-0 ${
+                cardToShow === 1 
+                  ? 'w-full' 
+                  : `w-[calc(${100 / cardToShow}%)]`
+              } ${cardToShow > 1 && index < projectsData.length - 1 ? 'mr-8' : ''}`}
+              // Add margin-right instead of using gap
             >
               <img
                 src={project.image}
                 alt={project.title}
-                className="w-full h-auto mb-14"
+                // FIXED: Use object-contain to show full image without cropping
+                className="w-full h-[300px] md:h-[350px] lg:h-[400px] object-contain mb-14 bg-gray-100"
               />
               <div className="absolute left-0 right-0 bottom-5 flex justify-center">
                 <div className="inline-block bg-white w-3/4 px-4 py-2 shadow-md">
