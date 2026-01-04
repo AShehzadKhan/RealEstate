@@ -24,7 +24,7 @@ Tech Stack
 
 
 
-# For Live Demo : [click here](https://ashehzadkhan.github.io/RealEstate)
+# For Live Demo : [click here](https://estate-rehaish.netlify.app)
 
 Purpose
 
